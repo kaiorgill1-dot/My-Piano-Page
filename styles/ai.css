@@ -1,0 +1,129 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body background */
+body {
+    font-family: 'Comic Neue', 'Segoe UI', sans-serif;
+    background: radial-gradient(circle, #ff00ff, #00ffff, #ffff00);
+    color: #fff;
+    overflow-x: hidden;
+    padding: 30px;
+}
+
+/* Container */
+body > * {
+    max-width: 700px;
+    margin: 0 auto 25px auto;
+    text-align: center;
+}
+
+/* HEADINGS */
+h1 {
+    font-size: 3rem;
+    color: #ff00ff;
+    text-shadow: 0 0 5px #ff0, 0 0 10px #0ff, 0 0 20px #f0f;
+    animation: wiggle 2s infinite, neonGlow 1.5s infinite alternate;
+}
+
+/* Subtitles */
+h2 {
+    font-size: 1.6rem;
+    margin-top: 20px;
+    color: #00ff00;
+    text-shadow: 0 0 5px #ff0, 0 0 10px #0ff;
+    animation: wiggle 3s infinite alternate;
+}
+
+/* Paragraph */
+p {
+    font-size: 1.1rem;
+    color: #ff0;
+    font-weight: bold;
+    animation: floatText 5s ease-in-out infinite;
+}
+
+/* Emphasized Text */
+.emphasizedText {
+    color: #ff0000;
+    text-shadow: 0 0 5px #ff0, 0 0 15px #0ff, 0 0 25px #f0f;
+    font-style: italic;
+    font-weight: bold;
+    animation: wiggle 1.5s infinite;
+}
+
+/* Lists */
+ul, ol {
+    padding-left: 25px;
+    margin-top: 10px;
+}
+
+li {
+    margin-bottom: 8px;
+    animation: bounce 2s infinite;
+}
+
+/* Images */
+img {
+    display: block;
+    margin: 20px auto;
+    border-radius: 20px;
+    border: 3px solid #fff;
+    box-shadow: 0 0 20px #ff0, 0 0 30px #0ff, 0 0 40px #f0f;
+    max-width: 80%;
+    animation: dance 4s infinite alternate;
+}
+
+/* Links */
+a {
+    color: #ff0;
+    text-decoration: none;
+    font-weight: bold;
+    text-shadow: 0 0 5px #ff0, 0 0 10px #f0f;
+    animation: neonGlow 1.5s infinite alternate;
+}
+
+a:hover {
+    text-shadow: 0 0 20px #ff0, 0 0 40px #0ff, 0 0 60px #f0f;
+}
+
+/* Animations */
+
+/* Wiggle side to side */
+@keyframes wiggle {
+    0% { transform: rotate(-5deg); }
+    50% { transform: rotate(5deg); }
+    100% { transform: rotate(-5deg); }
+}
+
+/* Float text up and down */
+@keyframes floatText {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+/* Bounce list items */
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Neon glow pulse */
+@keyframes neonGlow {
+    0% { text-shadow: 0 0 5px #ff0, 0 0 10px #0ff; }
+    50% { text-shadow: 0 0 20px #ff0, 0 0 40px #0ff, 0 0 60px #f0f; }
+    100% { text-shadow: 0 0 5px #ff0, 0 0 10px #0ff; }
+}
+
+/* Image dance (move side to side) */
+@keyframes dance {
+    0% { transform: translateX(0) rotate(-5deg); }
+    25% { transform: translateX(20px) rotate(5deg); }
+    50% { transform: translateX(-20px) rotate(-10deg); }
+    75% { transform: translateX(20px) rotate(10deg); }
+    100% { transform: translateX(0) rotate(0); }
+}

@@ -1,0 +1,48 @@
+.header{
+    background-color: black;
+    color:white;
+    height:100px;
+    line-height:100px;
+}
+
+.mainbody{
+    background-color: whitesmoke;
+}
+
+img{
+    display:block;
+    width:35%;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.footer{
+    background-color: burlywood;
+    color:white;
+    height:25px;
+    line-height: 25px;
+    position: fixed;
+    bottom:0px;
+}
+
+.common{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    background-color: black;
+    padding:10px;
+    overflow: hidden;
+}
+
+nav a{
+    color: aquamarine;
+    padding:10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav a:hover{
+    background-color: azure;
+}

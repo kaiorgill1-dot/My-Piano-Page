@@ -1,0 +1,22 @@
+p{
+    font-weight: bold;
+    font-size: 16px;
+}
+
+#top{
+    text-decoration: underline;
+}
+
+.emphasizedText{
+    font-style: italic;
+    color: red;
+}
+
+body{
+    background-color: whitesmoke;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    border: 5px solid black;
+    margin: 50px;
+    padding: 50px;
+}
